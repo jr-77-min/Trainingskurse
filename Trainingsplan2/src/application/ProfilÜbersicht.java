@@ -11,9 +11,9 @@ public class Profil‹bersicht extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		try {
-			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Start.fxml"));
+			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Profil.fxml"));
 			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
