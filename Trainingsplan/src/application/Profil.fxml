@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfilController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="20.0" prefWidth="258.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnback" mnemonicParsing="false" onAction="#actionBack" text="Button" />
+            <Label fx:id="lbVorname" prefHeight="18.0" prefWidth="133.0" text="Label" GridPane.rowIndex="1" />
+            <Label fx:id="lbNachname" text="Label" GridPane.rowIndex="2" />
+            <Label fx:id="lbGeburtstag" text="Label" GridPane.rowIndex="3" />
+            <Label fx:id="lbStraße" text="Label" GridPane.rowIndex="4" />
+            <Label fx:id="lbWohnort" text="Label" GridPane.rowIndex="5" />
+            <Label fx:id="lbMitgliedSeit" text="Label" GridPane.rowIndex="6" />
+            <Label fx:id="getVor" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="186.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Label fx:id="getGeb" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="195.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Label fx:id="getNach" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="187.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Label fx:id="getStr" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="179.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Label fx:id="getWohn" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="192.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+            <Label fx:id="getMitSeit" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="226.0" text="Label" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Pane fx:id="bildPane" layoutX="301.0" layoutY="20.0" prefHeight="213.0" prefWidth="245.0">
+         <children>
+            <ImageView fx:id="profilbild" fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/blankprofil.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="35.0" layoutY="-5.0" prefHeight="30.0" prefWidth="245.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="date" prefHeight="18.0" prefWidth="147.0" text="Label" />
+                  <Label fx:id="zeit" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="114.0" text="Label" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Button fx:id="btnsta" layoutX="66.0" layoutY="285.0" mnemonicParsing="false" onAction="#actionSta" prefHeight="69.0" prefWidth="178.0" text="Button" />
+      <Button fx:id="btncourse" layoutX="359.0" layoutY="285.0" mnemonicParsing="false" onAction="#actionKurse" prefHeight="69.0" prefWidth="178.0" text="Button" />
+   </children>
+</Pane>
